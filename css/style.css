@@ -1,0 +1,246 @@
+body {
+    background-color: rgb(208, 239, 251);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Harlow Solid Italic', 'Lucida Handwriting', 'Lucida Calligraphy', 'Brush Script MT', cursive;
+    text-align: center;
+}
+
+.whole_view_point {
+    width: 500px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Lucida Handwriting', Georgia, 'Times New Roman', Times, serif;
+    color: rgb(5, 25, 36)
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', 'Lucida Calligraphy', 'Lucida Handwriting', 'Lucida Calligraphy', 'Brush Script MT', cursive;
+    color: rgb(5, 25, 36);
+    text-align: center;
+}
+
+p {
+    line-height: 2em;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img, video {
+    padding: 5px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+    border: 3px dotted #0a1642;
+    width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .video-element {
+        display: none; /* Hide the video or use any other styling that fits your design */
+    }
+}
+
+ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: disc;
+}
+
+a:active {
+    font-weight: 300;
+    color: rgb(15, 9, 10);
+}
+
+a:link, a:visited {
+    font-weight: 300;
+    color: rgb(75, 95, 167);
+}
+
+a:hover {
+    color: rgb(130, 58, 92);
+}
+
+.h2_title {
+    grid-area: myArea;
+    text-align: center;
+}
+
+.description {
+    grid-area: description;
+    padding: 30px;
+}
+
+.large_img {
+    grid-area: large_image;
+    width: 400px;
+    margin: 30px;
+}
+
+.photo1, .photo2, .photo3 {
+    border-radius: 10%;
+}
+
+.photo1 {
+    grid-area: small_image1;
+}
+
+.photo2 {
+    grid-area: small_image2;
+}
+
+.photo3 {
+    grid-area: small_image3;
+}
+
+.video_brownie {
+    grid-area: video;
+}
+
+.photo1,
+.photo2,
+.photo3 {
+    width: 150px;
+}
+
+.small_description, .small_description2 {
+    grid-area: small_description;
+    padding: 10px;
+    border: 5px dashed #0a1642;
+    border-radius: 10%;
+    width: 300px;
+}
+
+.small_description2 {
+    background-color: #fde2e2;
+    margin-left: 40px;  
+}
+
+.small_description {
+    background-color: #b6c9ea;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.grid-container1, .grid-container2{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    width: 1440px;
+}
+
+.grid-container1 {
+    grid-template-areas: 'large_image large_image myArea myArea myArea myArea'
+                         'large_image large_image description description description description'
+                         'large_image large_image small_image1 small_image2 small_image3 small_description';
+    background-color: #fcdcdc;
+    background-image: radial-gradient(#b6c9ea 10%, transparent 11%),
+      radial-gradient(#ffffff 10%, transparent 11%);
+      /* dotted background source: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-28.php */
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat; 
+}
+
+.grid-container2{
+    background-color: #b6c9ea;
+    background-image: radial-gradient(#fcdcdc 10%, transparent 11%),
+      radial-gradient(#ffffff 10%, transparent 11%);
+      /* dotted background source: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-28.php */
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+    grid-template-areas: 'myArea myArea myArea myArea large_image large_image'
+                         'description description description description large_image large_image'
+                         'small_description small_image1 small_image2 small_image3 large_image large_image';
+}
+
+h3 {
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a.active {
+    font-weight: 300;
+    color: rgb(40, 5, 50);
+}
+
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.skip:focus {
+    color: black;
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gif img{
+        display: none;
+    }
+}
+
+.home-page-bg {
+    background-color: #b6c9ea;
+    background-image: radial-gradient(#fcdcdc 10%, transparent 11%),
+      radial-gradient(#ffffff 10%, transparent 11%);
+      /* dotted background source: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-28.php */
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+}
+
+.home-page {
+    background-color: #e0e5ed;
+    background-image: radial-gradient(#fcdcdc 10%, transparent 11%),
+      radial-gradient(#ffffff 10%, transparent 11%);
+      /* dotted background source: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-28.php */
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: rgb(222, 228, 245);
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 2.5px dashed rgb(250, 251, 252);
+    margin: 1.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+li.current {
+    background-color: #fde2e2;
+}
+
+
+
+
+  
+  
